@@ -28,7 +28,6 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:adafruit_huzzah
 LIBS:mainpcb-cache
 EELAYER 25 0
 EELAYER END
@@ -174,7 +173,7 @@ Wire Wire Line
 Wire Wire Line
 	3550 2500 4000 2500
 Wire Wire Line
-	2750 1950 2750 2800
+	2750 1950 2750 3000
 Wire Wire Line
 	2750 2800 6100 2800
 Connection ~ 4000 2800
@@ -186,9 +185,9 @@ Wire Wire Line
 Connection ~ 4000 1750
 Connection ~ 5100 1750
 Wire Wire Line
-	4900 3800 4300 3800
+	4300 3800 4900 3800
 Wire Wire Line
-	4300 3800 4300 1750
+	4300 1450 4300 3800
 Connection ~ 4300 1750
 Wire Wire Line
 	4900 4000 4350 4000
@@ -209,4 +208,27 @@ Wire Wire Line
 	4650 2750 4650 3400
 Wire Wire Line
 	4650 3400 4900 3400
+$Comp
+L GND #PWR?
+U 1 1 56FAB0DF
+P 2750 3000
+F 0 "#PWR?" H 2750 2750 50  0001 C CNN
+F 1 "GND" H 2750 2850 50  0000 C CNN
+F 2 "" H 2750 3000 50  0000 C CNN
+F 3 "" H 2750 3000 50  0000 C CNN
+	1    2750 3000
+	1    0    0    -1  
+$EndComp
+Connection ~ 2750 2800
+$Comp
+L +12V #PWR?
+U 1 1 56FAB133
+P 4300 1450
+F 0 "#PWR?" H 4300 1300 50  0001 C CNN
+F 1 "+12V" H 4300 1590 50  0000 C CNN
+F 2 "" H 4300 1450 50  0000 C CNN
+F 3 "" H 4300 1450 50  0000 C CNN
+	1    4300 1450
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
