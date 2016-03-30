@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:myparts
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -116,7 +117,7 @@ U 1 1 56F82B44
 P 5500 3550
 F 0 "U2" H 5500 2950 60  0000 C CNN
 F 1 "Adafruit_HUZZAH" H 5500 4150 60  0000 C CNN
-F 2 "Adafruit_huzzah:Adafruit HUZZAH" H 5400 3200 60  0001 C CNN
+F 2 "myparts:Adafruit-HUZZAH" H 5400 3200 60  0001 C CNN
 F 3 "" H 5400 3200 60  0000 C CNN
 	1    5500 3550
 	1    0    0    -1  
@@ -174,7 +175,7 @@ Wire Wire Line
 Wire Wire Line
 	3550 2500 4000 2500
 Wire Wire Line
-	2750 1950 2750 2800
+	2750 1950 2750 3000
 Wire Wire Line
 	2750 2800 6100 2800
 Connection ~ 4000 2800
@@ -186,9 +187,9 @@ Wire Wire Line
 Connection ~ 4000 1750
 Connection ~ 5100 1750
 Wire Wire Line
-	4900 3800 4300 3800
+	4300 3800 4900 3800
 Wire Wire Line
-	4300 3800 4300 1750
+	4300 1450 4300 3800
 Connection ~ 4300 1750
 Wire Wire Line
 	4900 4000 4350 4000
@@ -209,4 +210,27 @@ Wire Wire Line
 	4650 2750 4650 3400
 Wire Wire Line
 	4650 3400 4900 3400
+$Comp
+L GND #PWR01
+U 1 1 56FAB0DF
+P 2750 3000
+F 0 "#PWR01" H 2750 2750 50  0001 C CNN
+F 1 "GND" H 2750 2850 50  0000 C CNN
+F 2 "" H 2750 3000 50  0000 C CNN
+F 3 "" H 2750 3000 50  0000 C CNN
+	1    2750 3000
+	1    0    0    -1  
+$EndComp
+Connection ~ 2750 2800
+$Comp
+L +12V #PWR02
+U 1 1 56FAB133
+P 4300 1450
+F 0 "#PWR02" H 4300 1300 50  0001 C CNN
+F 1 "+12V" H 4300 1590 50  0000 C CNN
+F 2 "" H 4300 1450 50  0000 C CNN
+F 3 "" H 4300 1450 50  0000 C CNN
+	1    4300 1450
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

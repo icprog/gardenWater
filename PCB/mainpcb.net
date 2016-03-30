@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source C:/Users/yannickg/Documents/GitHub/gardenWater/src/PCB/mainpcb.sch)
-    (date "2016-03-29 12:41:25")
+    (date "2016-03-29 13:34:15")
     (tool "Eeschema 4.0.2-stable")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -53,8 +53,8 @@
       (tstamp 56F82A3E))
     (comp (ref U2)
       (value Adafruit_HUZZAH)
-      (footprint "Adafruit_huzzah:Adafruit HUZZAH")
-      (libsource (lib mainpcb-cache) (part Adafruit_HUZZAH))
+      (footprint myparts:Adafruit-HUZZAH)
+      (libsource (lib myparts) (part Adafruit_HUZZAH))
       (sheetpath (names /) (tstamps /))
       (tstamp 56F82B44))
     (comp (ref P1)
@@ -76,7 +76,7 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 56F87A89)))
   (libparts
-    (libpart (lib mainpcb-cache) (part Adafruit_HUZZAH)
+    (libpart (lib myparts) (part Adafruit_HUZZAH)
       (fields
         (field (name Reference) U)
         (field (name Value) Adafruit_HUZZAH))
@@ -162,16 +162,16 @@
         (pin (num 1) (name ~) (type passive))
         (pin (num 2) (name ~) (type passive)))))
   (libraries
-    (library (logical device)
-      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library\\device.lib"))
-    (library (logical transistors)
-      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library\\transistors.lib"))
     (library (logical conn)
       (uri "C:\\Program Files\\KiCad\\share\\kicad\\library\\conn.lib"))
+    (library (logical transistors)
+      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library\\transistors.lib"))
+    (library (logical device)
+      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library\\device.lib"))
+    (library (logical myparts)
+      (uri "C:\\Users\\yannickg\\Google Drive\\PCB\\KiCAD\\MyLibs\\myparts.lib"))
     (library (logical regul)
-      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library\\regul.lib"))
-    (library (logical mainpcb-cache)
-      (uri C:\Users\yannickg\Documents\GitHub\gardenWater\src\PCB\mainpcb-cache.lib)))
+      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library\\regul.lib")))
   (nets
     (net (code 1) (name "Net-(R12-Pad2)")
       (node (ref R12) (pin 2))
