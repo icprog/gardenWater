@@ -1,5 +1,4 @@
 # gardenWater
-Solenoid valve control to water the garden.
 
 ###What is this?
 
