@@ -1,4 +1,4 @@
-update=2016-03-29 15:43:50
+update=2016-04-06 21:04:20
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=C:/Users/yannickg/Documents/GitHub/homeCurrent/src/PCB/KiCAD;C:/Users/yannickg/Google Drive/PCB/KiCAD/MyLibs;C:/Users/yannickg/Desktop/kicad-ESP8266-master
+LibDir=C:/Users/Yannick/Google Drive/PCB/KiCAD/MyLibs
 [eeschema/libraries]
 LibName1=myparts
 LibName2=power
@@ -59,4 +59,3 @@ LibName27=opto
 LibName28=atmel
 LibName29=contrib
 LibName30=valves
-LibName31=adafruit_huzzah
