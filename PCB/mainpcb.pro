@@ -1,7 +1,7 @@
 <<<<<<< HEAD
 update=2016-04-06 07:04:38
 =======
-update=2016-04-06 21:04:20
+update=2016-04-23 18:55:44
 >>>>>>> origin/master
 version=1
 last_client=kicad
@@ -31,11 +31,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-<<<<<<< HEAD
-LibDir=C:/Users/yannickg/Google Drive/PCB/KiCAD/MyLibs;C:/Users/yannickg/Google Drive/PCB/KiCAD/Library_schematic_shield_arduino
-=======
-LibDir=C:/Users/Yannick/Google Drive/PCB/KiCAD/MyLibs
->>>>>>> origin/master
+LibDir=C:/Users/Yannick/Documents/GitHub/KiCAD/lib/MyLibs;C:/Users/Yannick/Documents/GitHub/KiCAD/lib/Library_schematic_shield_arduino;C:/Users/Yannick/Documents/GitHub/KiCAD/lib/kicad-ESP8266-master
 [eeschema/libraries]
 LibName1=myparts
 LibName2=power
@@ -48,7 +44,6 @@ LibName8=74xx
 LibName9=cmos4000
 LibName10=adc-dac
 LibName11=memory
-<<<<<<< HEAD
 LibName12=dsp
 LibName13=analog_switches
 LibName14=motorola
@@ -64,7 +59,10 @@ LibName23=opto
 LibName24=contrib
 LibName25=valves
 LibName26=shield_arduino
-=======
+LibName27=opto
+LibName28=atmel
+LibName29=contrib
+LibName30=valves
 LibName12=xilinx
 LibName13=microcontrollers
 LibName14=dsp
@@ -80,8 +78,7 @@ LibName23=philips
 LibName24=display
 LibName25=cypress
 LibName26=siliconi
-LibName27=opto
-LibName28=atmel
-LibName29=contrib
-LibName30=valves
+<<<<<<< HEAD
+>>>>>>> origin/master
+<<<<<<< HEAD
 >>>>>>> origin/master
